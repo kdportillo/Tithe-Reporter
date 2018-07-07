@@ -1,1 +1,2 @@
-python3 *.py
+#!/usr/bin/env bash
+python3 src/tithereporter.py
