@@ -1,10 +1,9 @@
 # Tithe-Reporter
 A GUI for summarizing yearly tithe donations for tax purposes. 
 
-## Timeline
-- Console: given a sample dataset, export all tuples to PDFs
-- GUI: open a gui where the user can select the dataset, then export all/selected tuples
-- .exe: make a complete program that can run cross platform
+## Curent Tasks
+- Fix window size
+- Make File search functionality
 
 ## Notes
 - Final document must include two lines for human signatures 
