@@ -14,5 +14,5 @@ class GUI:
         self.close_button = Button(master, text="Close", command=master.quit)
         self.close_button.pack()
 
-        def greet(self):
-            print("Greetings")
+    def greet(self):
+        print("Greetings")
