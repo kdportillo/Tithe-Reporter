@@ -1,4 +1,4 @@
-from Tkinter import Tk, Label, Button, Text, DISABLED
+from Tkinter import Label, Button
 import tkFileDialog as fd
 import tkMessageBox as mb
 import os
@@ -9,7 +9,7 @@ class GUI:
         master.title("Tithe Reporter")
         master.geometry('1000x500')
 
-        self.fileFound = False
+        self.filepath = ""
 
         self.label = Label(master, text="File Search")
         self.label.pack()
@@ -22,9 +22,10 @@ class GUI:
 
     def filesearch(self):
         tmpdir = fd.askopenfilename(initialdir=os.getcwd(), title='Choose file')
-        rtn = False
         if tmpdir:
             try:
                 self.file_button.configure(text='File Found', bg='green')
+                self.filepath = tmpdir
+                print(tmpdir, type(tmpdir))
             except:
                 mb.showerror("Open source file", "Failed to read file" + tmpdir)
