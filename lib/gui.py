@@ -1,5 +1,5 @@
 from tkinter import Label, Button, Checkbutton, IntVar, filedialog, messagebox
-from pandas import read_csv
+from pandas import read_csv, DataFrame
 import os
 
 
@@ -12,15 +12,17 @@ class GUI:
         self.filepath = ""
         self.cmd = 0
         self.names = []
-
-        self.label = Label(master, text="File Search")
-        self.label.pack()
+        self.size = 0
+        self.df = DataFrame()
 
         self.file_button = Button(master, text="Choose a file", command=self.filesearch)
         self.file_button.pack()
 
         self.makeboxes_button = Button(master, text="Retrieve Names", command=self.makeboxes)
         self.makeboxes_button.pack()
+
+        self.generate_button = Button(master, text="Generate PDFs", command=self.generate)
+        self.generate_button.pack()
 
         self.close_button = Button(master, text="Close", command=master.quit)
         self.close_button.pack()
@@ -36,8 +38,9 @@ class GUI:
                 messagebox.showerror("Open source file", "Failed to read file" + tmpdir)
 
     def getnames(self):
-        df = read_csv(self.filepath, encoding='utf-8')
-        self.names = df['Name'].tolist()
+        self.df = read_csv(self.filepath, encoding='utf-8')
+        self.names = self.df['Name'].tolist()
+        self.size = len(self.filepath)
 
     def makeboxes(self):
         try:
@@ -47,3 +50,6 @@ class GUI:
                 self.check_buttons.pack()
         except:
             messagebox.showerror("Populate Names", "Failed to create list of names")
+
+    def generate(self):
+        self.df['totals'] = self.df.sum(axis=1)
