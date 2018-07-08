@@ -1,5 +1,5 @@
 import sys
-from Tkinter import Tk
+from tkinter import Tk
 sys.path.insert(0, '../lib/')
 import gui
 
