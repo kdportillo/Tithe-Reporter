@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9dbd1b16-3a17-400b-bc7a-fb0f10b38d4f" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/gui.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/latexPDFs.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -38,16 +37,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gui.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="gui.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/gui.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="619">
-              <caret line="54" column="47" selection-start-line="54" selection-start-column="47" selection-end-line="54" selection-end-column="47" />
+            <state relative-caret-position="49">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
               <folding>
                 <element signature="e#0#78#0" expanded="true" />
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="latexPDFs.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/example/latexPDFs.py">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file leaf-file-name="build.sh" pinned="false" current-in-tab="false">
@@ -83,14 +87,15 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/tithereporter.py" />
         <option value="$PROJECT_DIR$/lib/gui.py" />
+        <option value="$PROJECT_DIR$/example/latexPDFs.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="1080" />
-    <option name="y" value="1602" />
-    <option name="width" value="810" />
-    <option name="height" value="1060" />
+    <option name="y" value="549" />
+    <option name="width" value="1920" />
+    <option name="height" value="1053" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -104,6 +109,11 @@
             <path>
               <item name="Tithe-Reporter" type="b2602c69:ProjectViewProjectNode" />
               <item name="Tithe-Reporter" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Tithe-Reporter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Tithe-Reporter" type="462c0819:PsiDirectoryNode" />
+              <item name="example" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Tithe-Reporter" type="b2602c69:ProjectViewProjectNode" />
@@ -224,21 +234,28 @@
       <option name="project" value="LOCAL" />
       <updated>1531028575474</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="generate totals for every tuple and print to console">
+      <created>1531084612416</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1531084612416</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="1080" y="1602" width="1920" height="1080" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.11666667" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11666667" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="R Packages" order="4" />
       <window_info anchor="right" id="R Graphics" order="3" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Python Console" order="8" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.5015625" side_tool="true" visible="true" weight="0.19418484" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.5015625" side_tool="true" visible="true" weight="0.19418484" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4984375" visible="true" weight="0.19418484" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -283,7 +300,8 @@
     <MESSAGE value="change color of button if file found" />
     <MESSAGE value="remove excess libraries" />
     <MESSAGE value="change venv to python3.7" />
-    <option name="LAST_COMMIT_MESSAGE" value="change venv to python3.7" />
+    <MESSAGE value="generate totals for every tuple and print to console" />
+    <option name="LAST_COMMIT_MESSAGE" value="generate totals for every tuple and print to console" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/README.md">
@@ -409,13 +427,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/gui.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="619">
-          <caret line="54" column="47" selection-start-line="54" selection-start-column="47" selection-end-line="54" selection-end-column="47" />
+        <state relative-caret-position="49">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
           <folding>
             <element signature="e#0#78#0" expanded="true" />
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/example/latexPDFs.py">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
