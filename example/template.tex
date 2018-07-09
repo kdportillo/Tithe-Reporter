@@ -1,0 +1,67 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{float}
+\usepackage{spreadtab}
+\usepackage{graphicx}
+\pagenumbering{gobble}
+
+\newcommand{\mysubtitle}[1]{\large\textbf{#1}\par}
+\newcommand{\mytitle}[1]{\LARGE \textbf{#1}\par}
+\newcommand{\mydate}[1]{\small #1\par}
+
+\begin{document}
+\noindent
+\begin{minipage}[t]{.3\textwidth}
+\vspace{0pt}\includegraphics[width=3cm,height=3cm]{unnamed.jpg}
+\end{minipage}%
+\begin{minipage}[t]{.7\textwidth}
+\vspace{0pt}
+\mytitle{<CHURCH NAME>}
+\mysubtitle{CHURCH ADDRESS}
+\mysubtitle{Summary of Tithe Donations for \newline FIRST LAST, FY \the\year}
+\mydate{Date Created: \today}
+\end{minipage}
+
+\bigskip
+\bigskip
+
+\begin{table}[h!]
+\centering
+\Large
+\begin{tabular}{r l}
+ Month & Total \\ [0.5ex]
+ \hline\hline
+ January & \$6  \\
+ February & \$7  \\
+ March & \$545 \\
+ April & \$545 \\
+ May & \$88  \\
+ June & \$1 \\
+ July & \$20 \\
+ August & \$100 \\
+ September & \$100 \\
+ October & \$100 \\
+ November & \$100 \\
+ December & \$100 \\ [1ex]
+ \hline \hline
+ \textbf{Total} & \textbf{\$AMT}
+\end{tabular}
+\end{table}
+\bigskip
+\bigskip
+
+\begin{tabular}{@{}p{.5in}p{4in}@{}}
+Approved: & \hrulefill \\
+& <PASTER NAME>\\
+& Pastor \\
+\end{tabular}
+\bigskip
+\bigskip
+
+\begin{tabular}{@{}p{.5in}p{4in}@{}}
+Approved: & \hrulefill \\
+& <TRESURER NAME> \\
+& Treasurer \\
+\end{tabular}
+
+\end{document}
